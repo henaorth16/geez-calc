@@ -33,10 +33,14 @@ function clearInput(){
 }
 
 function backSpace() {
-   let val = input.value
-   let sub = stringOfNum.slice(0, stringOfNum.length - 1)
-   input.value = val.substr(0, val.length - 1)
-   stringOfNum = sub
+  if(final){
+    clearInput()
+  }else{
+    let val = input.value
+    let sub = stringOfNum.slice(0, stringOfNum.length - 1)
+    input.value = val.substr(0, val.length - 1)
+    stringOfNum = sub
+  }
 }
 
 function excute() {
