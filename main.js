@@ -1,5 +1,5 @@
 const input = document.getElementById("input")
-let stringOfNum = '3+4+'
+let stringOfNum = ''
 let final = false
 
 function append(i, char) {
@@ -22,6 +22,7 @@ function append(i, char) {
       input.value += char
       stringOfNum += i
       final = false
+      console.log(stringOfNum)
    }
 }
 
@@ -41,11 +42,11 @@ function backSpace() {
 function excute() {
 
    let answer = eval(stringOfNum)
-   let isNegative = answer < 0
-   let isFloat = Math.ceil(answer) !== answer
-   isFloat ? "" :""
+  //  let isNegative = answer < 0
+  //  let isFloat = Math.ceil(answer) !== answer
+  //  isFloat ? "" :""
    input.value = convertToGeez(answer)
-  //  console.log(stringOfNum)
+   console.log(stringOfNum)
    final = answer ? true : false
 }
 
