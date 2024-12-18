@@ -3,35 +3,50 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Geez calculator</title>
+   <meta name="description" content="Explore our Geez Calculator, a unique localized calculator app using Geez numbers. Perform calculations in a traditional numerical system with ease.">
+   <meta name="keywords" content="Geez Calculator, Localized Calculator, Geez Numbers, Ethiopian Calculator, Traditional Numbers, Calculate in Geez">
+   <meta name="author" content="Your Name">
+   <title>Geez Calculator - Localized Numerical Tool</title>
    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuCA5ke0mfOV2xiyCMgL0Afw-fhFNbMjZHKw&s" type="image/x-icon">
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <div class="container">
-      <input type="text" disabled id="input">
-      <div class="button-cont">
-         <button onclick="append('+', '+')">+</button>
-         <button onclick="backSpace()">ቀንስ</button>
-         <button class="span2" onclick="clearInput()">አጥፋ</button>
-         <button onclick="append('-', '-')">-</button>
-         <button onclick="append('9', '፱')">፱</button>
-         <button onclick="append('8', '፰')">፰</button>
-         <button onclick="append('7', '፯')">፯</button>
-         <button onclick="append('*', 'X')">X</button>
-         <button onclick="append('6', '፮')">፮</button>
-         <button onclick="append('5', '፭')">፭</button>
-         <button onclick="append('4', '፬')">፬</button>
-         <button onclick="append('/', '÷')">÷</button>
-         <button onclick="append('3', '፫')">፫</button>
-         <button onclick="append('2', '፪')">፪</button>
-         <button onclick="append('1', '፩')">፩</button>
-         <button onclick="append('.', '.')">.</button>
-         <button class="span3" onclick="excute()">=</button>
-         
+   <header>
+      <h1>Geez Calculator</h1>
+      <!-- <p>Perform calculations with the unique Geez numerical system. Ideal for Ethiopian and historical number enthusiasts!</p> -->
+   </header>
+   
+   <main>
+      <div class="container">
+         <label for="input" class="visually-hidden">Calculator Input</label>
+         <input type="text" disabled id="input" aria-label="Calculator input">
+         <div class="button-cont">
+            <button onclick="append('+', '+')" aria-label="Add">+</button>
+            <button onclick="backSpace()" aria-label="Backspace">ቀንስ</button>
+            <button class="span2" onclick="clearInput()" aria-label="Clear">አጥፋ</button>
+            <button onclick="append('-', '-')" aria-label="Subtract">-</button>
+            <button onclick="append('9', '፱')" aria-label="Nine">፱</button>
+            <button onclick="append('8', '፰')" aria-label="Eight">፰</button>
+            <button onclick="append('7', '፯')" aria-label="Seven">፯</button>
+            <button onclick="append('*', 'X')" aria-label="Multiply">X</button>
+            <button onclick="append('6', '፮')" aria-label="Six">፮</button>
+            <button onclick="append('5', '፭')" aria-label="Five">፭</button>
+            <button onclick="append('4', '፬')" aria-label="Four">፬</button>
+            <button onclick="append('/', '÷')" aria-label="Divide">÷</button>
+            <button onclick="append('3', '፫')" aria-label="Three">፫</button>
+            <button onclick="append('2', '፪')" aria-label="Two">፪</button>
+            <button onclick="append('1', '፩')" aria-label="One">፩</button>
+            <button onclick="append('.', '.')" aria-label="Decimal point">.</button>
+            <button class="span3" onclick="excute()" aria-label="Equals">=</button>
+         </div>
       </div>
-   </div>
+   </main>
 
+   <footer>
+      <p>&copy; 2024 Geez Calculator. All Rights Reserved.</p>
+      <p>Check out our <a href="https://geezconverter.netlify.app" target="_blank" rel="noopener">Geez Number Converter</a>.</p>
+   </footer>
+   
    <script src="main.js"></script>
 </body>
 </html>
