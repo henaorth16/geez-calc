@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+      <input type="text" disabled id="input">
+      <div class="button-cont">
+         <button onclick="append('+', '+')">+</button>
+         <button onclick="backSpace()">ቀንስ</button>
+         <button class="span2" onclick="clearInput()">አጥፋ</button>
+         <button onclick="append('-', '-')">-</button>
+         <button onclick="append('9', '፱')">፱</button>
+         <button onclick="append('8', '፰')">፰</button>
+         <button onclick="append('7', '፯')">፯</button>
+         <button onclick="append('*', 'X')">X</button>
+         <button onclick="append('6', '፮')">፮</button>
+         <button onclick="append('5', '፭')">፭</button>
+         <button onclick="append('4', '፬')">፬</button>
+         <button onclick="append('/', '÷')">÷</button>
+         <button onclick="append('3', '፫')">፫</button>
+         <button onclick="append('2', '፪')">፪</button>
+         <button onclick="append('1', '፩')">፩</button>
+         <button onclick="append('.', '.')">.</button>
+         <button class="span3" onclick="excute()">=</button>
+         
+      </div>
+   </div>
+
+   <script src="main.js"></script>
+</body>
+</html>
