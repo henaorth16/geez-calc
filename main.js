@@ -46,6 +46,7 @@ function excute() {
   //  let isFloat = Math.ceil(answer) !== answer
   //  isFloat ? "" :""
    input.value = convertToGeez(answer)
+   stringOfNum = answer.toString()
    console.log(stringOfNum)
    final = answer ? true : false
 }
