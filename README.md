@@ -1,2 +1,2 @@
 # Geez calculator
-### the calculator with the G'eez number format.
+### the calculator with the Ge'ez number format.
